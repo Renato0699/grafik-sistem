@@ -600,7 +600,8 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 100%;
+  border-radius: 1rem;
 }
 
 .img-thumbnail {
@@ -1258,6 +1259,10 @@ progress {
   .row-cols-lg-5 > * {
     flex: 0 0 auto;
     width: 20%;
+  }
+  .row-cols-lg-6 > * {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
   }
   .row-cols-lg-6 > * {
     flex: 0 0 auto;
@@ -10988,46 +10993,55 @@ header.masthead .masthead-heading {
 }
 #proizvodi .proizvodi-item {
   max-width: 26rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 40rem;
 }
 #proizvodi .proizvodi-item .proizvodi-link {
-  position: relative;
-  display: block;
-  margin: 0 auto;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 50%;
 }
 #proizvodi .proizvodi-item .proizvodi-link .proizvodi-hover {
   display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 200, 0, 0.9);
+  background: rgba(255, 200, 0, 0.45);
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
+  border-radius: 1rem;
 }
 #proizvodi .proizvodi-item .proizvodi-link .proizvodi-hover .proizvodi-hover-content {
   font-size: 1.25rem;
+  
   color: white;
 }
 #proizvodi .proizvodi-item .proizvodi-link:hover .proizvodi-hover {
   opacity: 1;
+  
 }
 #proizvodi .proizvodi-item .proizvodi-caption {
-  padding: 1.5rem;
-  text-align: center;
-  background-color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #fff;
+    height: 50%;
+  
 }
 #proizvodi .proizvodi-item .proizvodi-caption .proizvodi-caption-heading {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   margin-bottom: 0;
+  
 }
 #proizvodi .proizvodi-item .proizvodi-caption .proizvodi-caption-subheading {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  
 }
 
 .proizvodi-modal .modal-dialog {
@@ -11313,4 +11327,9 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+ul#menu li {
+  display:inline;
+  padding: 0.5rem;
 }
